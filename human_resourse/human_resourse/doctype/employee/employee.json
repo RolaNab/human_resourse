@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Emp.###",
+ "creation": "2023-01-14 16:53:05.029949",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "emplyee_first_name",
+  "emplyee_middle_name",
+  "emplyee_last_name",
+  "emplyee_full_name",
+  "image",
+  "status",
+  "employee_number",
+  "date_of_birth",
+  "date_of_joining",
+  "mobile",
+  "department",
+  "empolyee_education"
+ ],
+ "fields": [
+  {
+   "fieldname": "emplyee_first_name",
+   "fieldtype": "Data",
+   "label": "Emplyee First Name"
+  },
+  {
+   "fieldname": "emplyee_middle_name",
+   "fieldtype": "Data",
+   "label": "Emplyee Middle Name"
+  },
+  {
+   "fieldname": "emplyee_last_name",
+   "fieldtype": "Data",
+   "label": "Emplyee Last Name"
+  },
+  {
+   "fieldname": "emplyee_full_name",
+   "fieldtype": "Data",
+   "label": "Emplyee Full Name"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nSuspended\nLeft"
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Data",
+   "label": "Employee Number"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "empolyee_education",
+   "fieldtype": "Table",
+   "label": "Empolyee Education",
+   "options": "Employee Education"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-14 16:53:05.029949",
+ "modified_by": "Administrator",
+ "module": "Human Resourse",
+ "name": "Employee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
