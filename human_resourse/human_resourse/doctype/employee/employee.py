@@ -4,5 +4,19 @@
 # import frappe
 from frappe.model.document import Document
 
+
 class Employee(Document):
-	pass
+    def validate(self):
+        self.fullName_()
+        self.validate_age_()
+
+    def fullName_(self):
+        fName = self.emplyee_first_name
+        mName = self.emplyee_middle_name
+        lName = self.emplyee_last_name
+        fullName = fName + " " + mName + " " + lName
+        self.emplyee_full_name = fullName
+
+    def validate_age_(self):
+        if self.age > 60:
+            return

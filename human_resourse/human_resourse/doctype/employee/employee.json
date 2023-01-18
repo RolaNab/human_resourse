@@ -12,13 +12,20 @@
   "emplyee_last_name",
   "emplyee_full_name",
   "image",
+  "column_break_6",
   "status",
   "employee_number",
   "date_of_birth",
+  "age",
   "date_of_joining",
   "mobile",
   "department",
-  "empolyee_education"
+  "section_break_13",
+  "empolyee_education",
+  "count_employee_education",
+  "section_break_16",
+  "cv",
+  "cv_valuation"
  ],
  "fields": [
   {
@@ -43,7 +50,7 @@
   },
   {
    "fieldname": "image",
-   "fieldtype": "Image",
+   "fieldtype": "Attach Image",
    "label": "Image"
   },
   {
@@ -70,7 +77,8 @@
   {
    "fieldname": "mobile",
    "fieldtype": "Data",
-   "label": "Mobile"
+   "label": "Mobile",
+   "options": "Phone"
   },
   {
    "fieldname": "department",
@@ -83,11 +91,45 @@
    "fieldtype": "Table",
    "label": "Empolyee Education",
    "options": "Employee Education"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "count_employee_education",
+   "fieldtype": "Data",
+   "label": "Count Employee Education",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cv",
+   "fieldtype": "Small Text",
+   "label": "CV"
+  },
+  {
+   "fieldname": "cv_valuation",
+   "fieldtype": "Data",
+   "label": "CV Valuation"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-14 16:53:05.029949",
+ "modified": "2023-01-18 21:56:54.506694",
  "modified_by": "Administrator",
  "module": "Human Resourse",
  "name": "Employee",
@@ -102,6 +144,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
    "share": 1,
    "write": 1
   }
