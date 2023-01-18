@@ -75,10 +75,10 @@
    "label": "Date of Joining"
   },
   {
+   "default": "059",
    "fieldname": "mobile",
    "fieldtype": "Data",
-   "label": "Mobile",
-   "options": "Phone"
+   "label": "Mobile"
   },
   {
    "fieldname": "department",
@@ -129,7 +129,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-18 21:56:54.506694",
+ "modified": "2023-01-18 22:13:48.406174",
  "modified_by": "Administrator",
  "module": "Human Resourse",
  "name": "Employee",
