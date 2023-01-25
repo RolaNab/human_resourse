@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Leave Application</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h1> Leave Application</h1>
+<!--{{leave_applications}}-->
+<table>
+  <tr>
+    <th>Employee Name</th>
+    <th>Leave Type</th>
+    <th>Total Leave Days</th>
+  </tr>
+<!--    {% set leave_applications = frappe.get_all('Leave Application',fields=['employee_name','leave_type','total_leave_days'])%}-->
+    {%for leave_aplication in  leave_applications %}
+  <tr>
+    <td>{{leave_aplication.employee_name}}</td>
+    <td>{{leave_aplication.leave_type}}</td>
+    <td>{{leave_aplication.total_leave_days}}</td>
+  </tr>
+    {%endfor%}
+</table>
+
+</body>
+</html>

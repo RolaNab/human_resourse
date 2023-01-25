@@ -2,7 +2,9 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Leave Allocation', {
-	// refresh: function(frm) {
-
-	// }
+	 validate: function(frm) {
+        if (frm.doc.from_date < get_today()) {
+            frappe.throw(__("Please select a From Date from the present or future."));
+        }
+    },
 });

@@ -10,6 +10,8 @@
   "employee_name",
   "department",
   "leave_type",
+  "max_continuous_days_allowed",
+  "applicable_after",
   "status",
   "leave_balance_before_application",
   "from_date",
@@ -104,12 +106,27 @@
    "options": "Leave Application",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fetch_from": "leave_type.max_continuous_days_allowed",
+   "fieldname": "max_continuous_days_allowed",
+   "fieldtype": "Data",
+   "label": "Max Continuous Days Allowed",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "leave_type.applicable_after",
+   "fieldname": "applicable_after",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Applicable After",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-01-24 09:45:29.416249",
+ "modified": "2023-01-25 09:21:12.259267",
  "modified_by": "Administrator",
  "module": "Human Resourse",
  "name": "Leave Application",
