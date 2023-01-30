@@ -37,17 +37,20 @@
   {
    "fieldname": "leave_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Leave Type",
    "options": "Leave Type"
   },
   {
    "fieldname": "from_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "From Date"
   },
   {
    "fieldname": "to_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "To Date,"
   },
   {
@@ -58,7 +61,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-25 08:31:35.771465",
+ "modified": "2023-01-28 16:44:43.328287",
  "modified_by": "Administrator",
  "module": "Human Resourse",
  "name": "Leave Allocation",

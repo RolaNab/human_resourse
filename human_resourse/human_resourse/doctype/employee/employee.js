@@ -18,8 +18,8 @@ frm.set_df_property('age', 'read_only', '1');
       age--;
     }
     frm.set_value('age', age);
-    if (age > 60) {
-    frappe.msgprint("The Age more than 60 nnnn");
+    if (age > 60 & frm.doc.status == 'Active') {
+    frappe.msgprint("The Age more than 60 and the status is Active");
     Validate = false;
 }
 });
@@ -37,6 +37,14 @@ frappe.ui.form.on('Employee',  {
  frm.set_df_property('emplyee_full_name', 'read_only', '1');
  }
  });
+
+///////////// Mobile Number ////////////
+frappe.ui.form.on('Employee', 'validate', function(frm) {
+if (frm.doc.mobile.length != 10 ) {
+frappe.msgprint("The Mobile Number must be 10 numbers");
+Validate = false;
+}
+});
 
  //////////// Employee Education /////////////
 
@@ -57,11 +65,3 @@ if (frm.doc.count_employee_education < 2 ) {
  frappe.throw('Employee Education must be have at least Two Education');
 }
 } })
-
-///////////// Mobile Number ////////////
-frappe.ui.form.on('Employee', 'validate', function(frm) {
-if (frm.doc.mobile.length<10) {
-frappe.msgprint("The Mobile Number is invalid");
-Validate = false;
-}
-});
