@@ -3,7 +3,6 @@
 from datetime import datetime
 
 import frappe
-# import frappe
 from frappe.model.document import Document
 from frappe.utils import date_diff, getdate, add_to_date
 from frappe import _

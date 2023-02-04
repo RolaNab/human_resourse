@@ -25,7 +25,8 @@
   "count_employee_education",
   "section_break_16",
   "cv",
-  "cv_valuation"
+  "cv_valuation",
+  "user"
  ],
  "fields": [
   {
@@ -124,12 +125,19 @@
    "fieldname": "age",
    "fieldtype": "Data",
    "label": "Age"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-18 22:13:48.406174",
+ "modified": "2023-02-03 23:45:48.228855",
  "modified_by": "Administrator",
  "module": "Human Resourse",
  "name": "Employee",
